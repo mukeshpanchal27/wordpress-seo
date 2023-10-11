@@ -11,8 +11,6 @@ use ReturnTypeWillChange;
  * Model base class. Your model objects should extend
  * this class. A minimal subclass would look like:
  *
- * class Widget extends Model {
- * }
  */
 class Model implements JsonSerializable {
 
