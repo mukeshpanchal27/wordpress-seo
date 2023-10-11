@@ -65,6 +65,9 @@ class WPSEO_Register_Capabilities_Test extends WPSEO_UnitTestCase {
 
 		$allcaps = $register->filter_user_has_wpseo_manage_options_cap( $user->allcaps, [ 'wpseo_manage_options' ], [], $user );
 
+		var_dump( $allcaps );
+		var_dump( $options );
+		var_dump( $expected_has_cap );
 		$this->assertSame( $expected_has_cap, ! empty( $allcaps['wpseo_manage_options'] ) );
 	}
 
